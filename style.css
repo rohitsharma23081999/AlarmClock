@@ -1,0 +1,95 @@
+body {
+  background: linear-gradient(135deg, #2b5876, #4e4376);
+}
+
+.container {
+  text-align: center;
+  margin: auto;
+  color: white;
+  background: linear-gradient(135deg, #343a40, #484f58);
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  border-radius: 40px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+.content {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.rotation {
+  height: 200px;
+  width: 200px;
+  background: linear-gradient(135deg, #3c4147, #22272e);
+  border-radius: 50%;
+  display: inline-block;
+  border: 2px solid #1f2226;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+.screenTiming {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 60px;
+}
+
+select,
+button {
+  border-radius: 5px;
+  background: linear-gradient(135deg, #333333, #222222);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+#alarmHour {
+  background-color: black;
+}
+#alarmMinute {
+  background-color: black;
+}
+#alarmSecond {
+  background-color: black;
+}
+#alarmSession {
+  background-color: black;
+}
+select:hover,
+button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #393939, #282828);
+}
+
+#buttonContainer > li {
+  margin-top: 10px;
+  border: 2px solid #272727;
+  border-radius: 80px;
+  font-size: 20px;
+  color: white;
+  background: linear-gradient(135deg, #333333, #222222);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#buttonContainer > li > button {
+  font-weight: bold;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #333333, #222222);
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+
+#buttonContainer > li > button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #393939, #282828);
+}
